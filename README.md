@@ -100,7 +100,6 @@ graph TB
 
     Webview --> Controller
     Controller --> Task
-    Task --> AI Providers
     Task --> MCP
 
     style Webview fill:#bbf
