@@ -1,0 +1,45 @@
+import { name, publisher, version } from "../package.json"
+
+const prefix = "coder"
+
+/**
+ * List of commands with the name of the extension they are registered under.
+ * These should match the command IDs defined in package.json.
+ * For Nightly build, the publish script has updated all the commands to use the extension name as prefix.
+ * In production, all commands are registered under "coder" for consistency.
+ */
+const ClineCommands = {
+	PlusButton: prefix + ".plusButtonClicked",
+	HistoryButton: prefix + ".historyButtonClicked",
+	TerminalOutput: prefix + ".addTerminalOutputToChat",
+	AddToChat: prefix + ".addToChat",
+	FixWithCline: prefix + ".fixWithCoder", // package.json uses fixWithCoder due to replace
+	ExplainCode: prefix + ".ide.explainCode",
+	ImproveCode: prefix + ".improveCode",
+	FocusChatInput: prefix + ".focusChatInput",
+	Walkthrough: prefix + ".openWalkthrough",
+	GenerateCommit: prefix + ".generateGitCommitMessage",
+	AbortCommit: prefix + ".abortGitCommitMessage",
+	ReconstructTaskHistory: prefix + ".reconstructTaskHistory",
+}
+
+/**
+ * IDs for the views registered by the extension.
+ * These should match the name + view IDs defined in package.json.
+ */
+const ClineViewIds = {
+	Sidebar: "gguf-dev.SidebarProvider",
+}
+
+/**
+ * The registry info for the extension, including its ID, name, version, commands, and views
+ * registered for the current host.
+ */
+export const ExtensionRegistryInfo = {
+	id: publisher + "." + name,
+	name,
+	version,
+	publisher,
+	commands: ClineCommands,
+	views: ClineViewIds,
+}

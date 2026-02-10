@@ -1,0 +1,6 @@
+import { Empty } from "@shared/proto/cline/common"
+import { Controller } from ".."
+
+export async function getUserOrganizations(_controller: Controller, _request: any): Promise<any> {
+	return Empty.create()
+}
