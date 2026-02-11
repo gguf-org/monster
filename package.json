@@ -2,11 +2,10 @@
 	"name": "gguf",
 	"displayName": "gguf",
 	"description": "gguf code bot extension nightly",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"publisher": "gguf",
 	"author": {
-		"name": "gguf",
-		"email": "info@gguf.us"
+		"name": "gguf"
 	},
 	"license": "MIT",
 	"icon": "assets/icons/icon.png",

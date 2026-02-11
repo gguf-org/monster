@@ -1,4 +1,4 @@
-# monster
+# code monster
 
 **a monster level code bot**
 
