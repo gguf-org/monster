@@ -1,5 +1,9 @@
 # Changelog
 
+## [2026.2.10]
+
+- re-publish as gguf all-in-one integration
+
 ## [2026.2.9]
 
 - point to the new monster repo for source code references
