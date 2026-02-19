@@ -1,5 +1,9 @@
 # Changelog
 
+## [2026.2.18]
+
+- re-structure bot menu to only retain wake up and console
+
 ## [2026.2.10]
 
 - re-publish as gguf all-in-one integration

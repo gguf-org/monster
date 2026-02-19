@@ -152,20 +152,20 @@ export async function activate(context: vscode.ExtensionContext) {
     let menuCommand = vscode.commands.registerCommand('openclawbot.showMenu', async () => {
         const selection = await vscode.window.showInformationMessage(
             "Connect to Bot? Make sure your openclaw is ready.",
-            "Status",
-            "Onboard",
-            "Gateway",
-            "Terminal",
-            "Dashboard"
+            "Wake up",
+            // "Onboard",
+            // "Gateway",
+            // "Dashboard",
+            "Console"
         );
 
         if (selection) {
             const commandMap: { [key: string]: string } = {
-                'Status': 'openclaw status',
-                'Onboard': 'openclaw onboard',
-                'Gateway': 'openclaw gateway',
-                'Terminal': 'openclaw tui',
-                'Dashboard': 'openclaw dashboard'
+                'Wake up': 'openclaw status',
+                // 'Onboard': 'openclaw onboard',
+                // 'Gateway': 'openclaw gateway',
+                // 'Dashboard': 'openclaw dashboard',
+                'Console': 'openclaw tui'
             };
             const command = commandMap[selection];
             if (command) {
