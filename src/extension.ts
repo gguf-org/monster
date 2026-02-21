@@ -156,7 +156,10 @@ export async function activate(context: vscode.ExtensionContext) {
             // "Onboard",
             // "Gateway",
             // "Dashboard",
-            "Console"
+            "Console",
+            "Start",
+            "Stop",
+            "Restart"
         );
 
         if (selection) {
@@ -165,7 +168,10 @@ export async function activate(context: vscode.ExtensionContext) {
                 // 'Onboard': 'openclaw onboard',
                 // 'Gateway': 'openclaw gateway',
                 // 'Dashboard': 'openclaw dashboard',
-                'Console': 'openclaw tui'
+                'Console': 'openclaw tui',
+                'Start': 'openclaw gateway start',
+                'Stop': 'openclaw gateway stop',
+                'Restart': 'openclaw gateway restart'
             };
             const command = commandMap[selection];
             if (command) {

@@ -1,8 +1,8 @@
 {
 	"name": "gguf",
 	"displayName": "gguf",
-	"description": "gguf code bot extension nightly",
-	"version": "0.2.6",
+	"description": "gguf code bot extension",
+	"version": "0.2.9",
 	"publisher": "gguf",
 	"author": {
 		"name": "gguf"
